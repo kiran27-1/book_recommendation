@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Book Recommendations Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+        .about {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .book {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .book h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .book p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .book a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .book a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Recommendations Website</h1>
+    </header>
+    <main class="book-collection">
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to our Book Recommendations Website! We are passionate about connecting readers with books that inspire, educate, and entertain. Our carefully curated selection features a wide range of genres and categories, ensuring there's something for everyone. Dive into our recommendations and discover your next favorite read!</p>
+        </section>
+        <section class="book-recommendations">
+            <h2>Our Book Recommendations</h2>
+    <div class="container">
+        <div class="book">
+            <img src="into_the_wild.jpg" alt="Into the Wild">
+            <h3>Into the Wild</h3>
+            <p>Jon Krakauer</p>
+            <p>Category: Biography</p>
+            <a href="https://www.amazon.com/Into-Wild-Jon-Krakauer/dp/0385486804" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="gatsby.jpg" alt="The Great Gatsby">
+            <h3>The Great Gatsby</h3>
+            <p>F. Scott Fitzgerald</p>
+            <p>Category: Classic Literature</p>
+            <a href="https://www.amazon.com/Great-Gatsby-F-Scott-Fitzgerald/dp/0743273567" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="goodnight.jpg" alt="Goodnight Moon">
+            <h3>Goodnight Moon</h3>
+            <p>Ultimate going-to-bed book has stood the test of time.</p>
+            <a href="https://www.amazon.com/Goodnight-Moon-Margaret-Wise-Brown/dp/0694003611" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_snowy_day.jpg" alt="The Snowy Day">
+            <h3>The Snowy Day</h3>
+            <p>Charming bedtime book is magic for truck lovers.</p>
+            <a href="https://www.amazon.com/Snowy-Day-Board-Ezra-Jack/dp/0670867330" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="graveyard.jpg" alt="The Graveyard Book">
+            <h3>The Graveyard Book</h3>
+            <p>Neil Gaiman</p>
+            <p>Category: Fantasy</p>
+            <a href="https://www.amazon.com/Graveyard-Book-Neil-Gaiman/dp/0060530944" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="shadow.jpg" alt="The Shadow of the Wind">
+            <h3>The Shadow of the Wind</h3>
+            <p>Carlos Ruiz Zafon</p>
+            <p>Category: Mystery/Horror</p>
+            <a href="https://www.amazon.com/Shadow-Wind-Carlos-Ruiz-Zafon/dp/0143034901" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="glass-castle.jpg" alt="The Glass Castle">
+            <h3>The Glass Castle</h3>
+            <p>Jeannette Walls</p>
+            <p>Category: Memoir</p>
+            <a href="https://www.amazon.com/Glass-Castle-Memoir-Jeannette-Walls/dp/074324754X" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="brain_on_fire.jpg" alt="Brain on Fire">
+            <h3>Brain on Fire</h3>
+            <p>Susannah Cahalan</p>
+            <p>Category: Psychology</p>
+            <a href="https://www.amazon.com/Brain-Fire-My-Month-Madness/dp/1451621388" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="carlnifonia.jpg" alt="carlnifonia">
+            <h3>California</h3>
+            <p>Edan Lepucki</p>
+            <p>Category: Dystopia Fiction</p>
+            <a href="https://www.amazon.com/California-Novel-Edan-Lepucki/dp/0316250813" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="immortal.jpg" alt="The Immortal Life of Henrietta Lacks">
+            <h3>The Immortal Life of Henrietta Lacks</h3>
+            <p>Rebecca Skloot</p>
+            <p>Category: Biography</p>
+            <a href="https://www.amazon.com/Immortal-Life-Henrietta-Lacks/dp/1400052181" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="alexander.jpg" alt="Alexander Hamilton">
+            <h3>Alexander Hamilton</h3>
+            <p>Ron Chernow</p>
+            <p>Category: Biography</p>
+            <a href="https://www.amazon.com/Alexander-Hamilton-Ron-Chernow/dp/0143034758" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="einstein.jpg" alt="Einstein: His Life and Universe">
+            <h3>Einstein: His Life and Universe</h3>
+            <p>Walter Isaacson</p>
+            <p>Category: Biography</p>
+            <a href="https://www.amazon.com/Einstein-His-Life-Universe/dp/0743264746" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="elon.jpg" alt="Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future">
+            <h3>Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future</h3>
+            <p>Ashlee Vance</p>
+            <p>Category: Biography</p>
+            <a href="https://www.amazon.com/Elon-Musk-SpaceX-Fantastic-Future/dp/006230125X" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="malala.jpg" alt="I Am Malala: The Story of the Girl Who Stood Up for Education and Was Shot by the Taliban">
+            <h3>I Am Malala: The Story of the Girl Who Stood Up for Education and Was Shot by the Taliban</h3>
+            <p>Malala Yousafzai</p>
+            <p>Category: Biography</p>
+            <a href="https://www.amazon.com/Am-Malala-Stood-Education-Taliban/dp/0316322407" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="sharp_objects.jpg" alt="Sharp Objects">
+            <h3>Sharp Objects</h3>
+            <p>Gillian Flynn</p>
+            <p>Category: Mystery/Horror</p>
+            <a href="https://www.amazon.com/Sharp-Objects-Gillian-Flynn/dp/0307341550" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_road.jpg" alt="The Road">
+            <h3>The Road</h3>
+            <p>Cormac McCarthy</p>
+            <p>Category: Mystery/Horror</p>
+            <a href="https://www.amazon.com/Road-Cormac-McCarthy/dp/0307387895" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_bride.jpg" alt="The Bride Collector">
+            <h3>The Bride Collector</h3>
+            <p>Ted Dekker</p>
+            <p>Category: Mystery/Horror</p>
+            <a href="https://www.amazon.com/Bride-Collector-Novel-Ted-Dekker/dp/1599951945" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_lairs.jpg" alt="The Liars’ Club">
+            <h3>The Liars’ Club</h3>
+            <p>Mary Karr</p>
+            <p>Category: Memoir</p>
+            <a href="https://www.amazon.com/Liars-Club-Memoir-Mary-Karr/dp/0143035746" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="glass-castle.jpg" alt="The Glass Castle">
+            <h3>The Glass Castle</h3>
+            <p>Jeannette Walls</p>
+            <p>Category: Memoir</p>
+            <a href="https://www.amazon.com/Glass-Castle-Memoir-Jeannette-Walls/dp/074324754X" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="same.jpg" alt="Same Kind of Different as Me">
+            <h3>Same Kind of Different as Me</h3>
+            <p>Ron Hall</p>
+            <p>Category: Memoir</p>
+            <a href="https://www.amazon.com/Same-Kind-Different-Modern-Day-International/dp/084991910X" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="smoke.jpg" alt="Smoke Gets in Your Eyes">
+            <h3>Smoke Gets in Your Eyes: and Other Lessons from the Crematory</h3>
+            <p>Caitlin Doughty</p>
+            <p>Category: Memoir</p>
+            <a href="https://www.amazon.com/Smoke-Gets-Your-Eyes-Crematory/dp/0393351904" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="brain_on_fire.jpg" alt="Brain on Fire">
+            <h3>Brain on Fire</h3>
+            <p>Susannah Cahalan</p>
+            <p>Category: Psychology</p>
+            <a href="https://www.amazon.com/Brain-Fire-My-month-Madness/dp/1451621388" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="girl.jpg" alt="Girl, Interrupted">
+            <h3>Girl, Interrupted</h3>
+            <p>Susanna Kaysen</p>
+            <p>Category: Psychology</p>
+            <a href="https://www.amazon.com/Girl-Interrupted-Susanna-Kaysen/dp/0679746048" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="darkness.jpg" alt="Darkness Visible">
+            <h3>Darkness Visible</h3>
+            <p>William Styron</p>
+            <p>Category: Psychology</p>
+            <a href="https://www.amazon.com/Darkness-Visible-Memoir-Madness/dp/0679736395" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="we.jpg" alt="We">
+            <h3>We</h3>
+            <p>Yevgeny Zamyatin</p>
+            <p>Category: Dystopia Fiction</p>
+            <a href="https://www.amazon.com/We-Yevgeny-Zamyatin/dp/0140185852" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="mr.jpg" alt="Mr. Penumbra’s 24-Hour Bookstore">
+            <h3>Mr. Penumbra’s 24-Hour Bookstore</h3>
+            <p>Robin Sloan</p>
+            <p>Category: Realistic Fiction</p>
+            <a href="https://www.amazon.com/Mr-Penumbras-24-Hour-Bookstore-Novel/dp/1250037751" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="tell_the_wolves.jpg" alt="Tell the Wolves I’m Home">
+            <h3>Tell the Wolves I’m Home</h3>
+            <p>Carol Rifka Brunt</p>
+            <p>Category: Realistic Fiction</p>
+            <a href="https://www.amazon.com/Tell-Wolves-Im-Home-Novel/dp/0812982851" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="black.jpg" alt="Black (series)">
+            <h3>Black (series)</h3>
+            <p>Ted Dekker</p>
+            <p>Category: Science Fiction</p>
+            <a href="https://www.amazon.com/Black-Book-One-Red-Ted-Dekker/dp/1595547305" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="black_moon.jpg" alt="Black Moon">
+            <h3>Black Moon</h3>
+            <p>Kenneth Calhoun</p>
+            <p>Category: Science Fiction</p>
+            <a href="https://www.amazon.com/Black-Moon-Novel-Kenneth-Calhoun/dp/0553418840" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_bone_clocks.jpg" alt="The Bone Clocks">
+            <h3>The Bone Clocks</h3>
+            <p>David Mitchell</p>
+            <p>Category: Science Fiction</p>
+            <a href="https://www.amazon.com/Bone-Clocks-Novel-David-Mitchell/dp/0812976824" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_snowchild.jpg" alt="The Snow Child">
+            <h3>The Snow Child</h3>
+            <p>Eowyn Ivey</p>
+            <p>Category: Fantasy</p>
+            <a href="https://www.amazon.com/Snow-Child-Novel-Eowyn-Ivey/dp/0316175676" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="never.jpg" alt="Never Let me Go">
+            <h3>Never Let me Go</h3>
+            <p>Kazuo Ishiguro</p>
+            <p>Category: Fantasy</p>
+            <a href="https://www.amazon.com/Never-Let-Me-Kazuo-Ishiguro/dp/1400078776" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="black_water.jpg" alt="Black Water">
+            <h3>Black Water</h3>
+            <p>Joyce Carol Oates</p>
+            <p>Category: Historical Fiction</p>
+            <a href="https://www.amazon.com/Black-Water-Joyce-Carol-Oates/dp/0452269865" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="libra.jpg" alt="Libra">
+            <h3>Libra</h3>
+            <p>Don DeLillo</p>
+            <p>Category: Historical Fiction</p>
+            <a href="https://www.amazon.com/Libra-Contemporary-Don-DeLillo/dp/0141041990" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="we_are_lairs.jpg" alt="We Were Liars">
+            <h3>We Were Liars</h3>
+            <p>E. Lockhart</p>
+            <p>Category: Young Adult</p>
+            <a href="https://www.amazon.com/We-Were-Liars-Lockhart/dp/038574126X" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_fever.jpg" alt="The Fever">
+            <h3>The Fever</h3>
+            <p>Megan Abbott</p>
+            <p>Category: Young Adult</p>
+            <a href="https://www.amazon.com/Fever-Megan-Abbott/dp/0316231051" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="eleanor.jpg" alt="Eleanor & Park">
+            <h3>Eleanor & Park</h3>
+            <p>Rainbow Rowell</p>
+            <p>Category: Young Adult</p>
+            <a href="https://www.amazon.com/Eleanor-Park-Rainbow-Rowell/dp/1250012570" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="miss.jpg" alt="Miss Peregrine’s Home for Peculiar Children">
+            <h3>Miss Peregrine’s Home for Peculiar Children</h3>
+            <p>Ransom Riggs</p>
+            <p>Category: Young Adult</p>
+            <a href="https://www.amazon.com/Miss-Peregrines-Home-Peculiar-Children/dp/1594746036" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="dont_let.jpg" alt="Don't Let the Pigeon Drive the Bus">
+            <h3>Don't Let the Pigeon Drive the Bus</h3>
+            <p>Silliness that appeals to preschoolers.</p>
+            <a href="https://www.amazon.com/Dont-Let-Pigeon-Drive-Bus/dp/078681988X" target="_blank">Buy on Amazon</a>
+        </div>
+            
+        <div class="book">
+            <img src="goodnight.jpg" alt="Goodnight Moon">
+            <h3>Goodnight Moon</h3>
+            <p>Ultimate going-to-bed book has stood the test of time.</p>
+            <a href="https://www.amazon.com/Goodnight-Moon-Margaret-Wise-Brown/dp/0694003611" target="_blank">Buy on Amazon</a>
+        </div>
+        <div class="book">
+            <img src="the_snowy_day.jpg" alt="The Snowy Day">
+            <h3>The Snowy Day</h3>
+            <p>Charming bedtime book is magic for truck lovers.</p>
+            <a href="https://www.amazon.com/Snowy-Day-Board-Ezra-Jack/dp/0670867330" target="_blank">Buy on Amazon</a>
+        </div>
+        </body>
+        </html>
+    </div>
+</body>
+</html>

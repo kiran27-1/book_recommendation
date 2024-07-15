@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Assistant Integration</title>
+    <style>
+        /* Add some basic styling */
+        #chat {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        #messages {
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-y: scroll;
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .user {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat">
+        <div id="messages"></div>
+        <input type="text" id="userInput" placeholder="Type your message here">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+        const assistantUrl = 'YOUR_WATSON_ASSISTANT_URL';
+        const assistantApiKey = 'YOUR_WATSON_ASSISTANT_API_KEY';
+
+        async function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            displayMessage(userInput, 'user');
+
+            const response = await axios.post(assistantUrl, {
+                input: { text: userInput },
+                assistantId: 'YOUR_ASSISTANT_ID',
+                sessionId: 'YOUR_SESSION_ID'
+            }, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Basic ' + btoa('apikey:' + assistantApiKey)
+                }
+            });
+
+            const assistantResponse = response.data.output.generic[0].text;
+            displayMessage(assistantResponse, 'assistant');
+        }
+
+        function displayMessage(message, sender) {
+            const messagesDiv = document.getElementById('messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            messageDiv.textContent = message;
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    </script>
+</body>
+</html>
